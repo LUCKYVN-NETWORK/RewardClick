@@ -93,15 +93,12 @@ public class Main extends JavaPlugin implements Listener {
                     Location location = parseLocation(locationString);
                     if (location != null) {
                         if (tier.isEmpty()) {
-                            getLogger().warning("Tier for location " + locationString + " is null or empty.");
                             continue;
                         }
                         if (!getConfig().contains("tiers." + tier + ".item-use")) {
-                            getLogger().warning("Item-use for tier " + tier + " is not defined.");
                             continue;
                         }
                         if (!getConfig().contains("tiers." + tier + ".material")) {
-                            getLogger().warning("Material for tier " + tier + " is not defined.");
                             continue;
                         }
                         rewardLocations.put(location, tier);
@@ -129,7 +126,6 @@ public class Main extends JavaPlugin implements Listener {
     public void hideAllRewardBlocks() {
         for (Location location : rewardLocations.keySet()) {
             if (location.getWorld() == null) {
-                getLogger().warning("World is null for location: " + locationToString(location));
                 continue;
             }
             Block block = location.getBlock();
@@ -172,17 +168,14 @@ public class Main extends JavaPlugin implements Listener {
         for (Location location : activeRewardLocations) {
             String tier = rewardLocations.get(location);
             if (tier == null || tier.isEmpty()) {
-                getLogger().warning("Tier for location " + location + " is null or empty.");
                 continue;
             }
             String materialName = getConfig().getString("tiers." + tier + ".item-use");
             if (materialName == null || materialName.isEmpty()) {
-                getLogger().warning("Material name for tier " + tier + " is null or empty at location: " + location.toString());
                 continue;
             }
             Material material = materialName.startsWith("head-") ? Material.PLAYER_HEAD : Material.matchMaterial(materialName);
             if (material == null || !material.isBlock()) {
-                getLogger().warning("Invalid material for tier " + tier + " at location: " + location.toString());
                 continue;
             }
             editBlock(location, tier);
@@ -193,7 +186,6 @@ public class Main extends JavaPlugin implements Listener {
 
     public void startEvent(CommandSender sender) {
         if (eventStarted) {
-            sender.sendMessage(CC.translate(getConfig().getString("messages.event_already_starteds")));
             return;
         }
         eventStarted = true;
