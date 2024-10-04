@@ -39,6 +39,7 @@ public class Main extends JavaPlugin implements Listener {
         loadLocations();
         loadActiveRewardLocations();
 
+        getServer().getConsoleSender().sendMessage("[RewardClick] Plugins Enable Copy Right DatxCute");
 
         getCommand("reward").setExecutor(new Rewardcommand(this));
         getServer().getPluginManager().registerEvents(new BlockListener(this), this);
