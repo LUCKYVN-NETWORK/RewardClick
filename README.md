@@ -12,12 +12,12 @@
 
 ### Commands
 - RewardClick Comamnd
-  - • &e/reward help &8- &7Hiển thị trợ giúp về các lệnh.
-  - • &e/reward edit <tier> &8- &7Bắt đầu chỉnh sửa tier.
-  - • &e/reward save &8- &7Lưu các vị trí đã đánh dấu.
-  - • &e/reward start &8- &7Bắt đầu sự kiện.
-  - • &e/reward stop &8- &7Dừng sự kiện.
-  - • &e/reward reload &8- &7Reload lại config
+  - • /reward help - Hiển thị trợ giúp về các lệnh.
+  - • /reward edit <tier> - Bắt đầu chỉnh sửa tier.
+  - • /reward save - Lưu các vị trí đã đánh dấu.
+  - • /reward start - Bắt đầu sự kiện.
+  - • /reward stop - Dừng sự kiện.
+  - • /reward reload - Reload lại config
 <hr>
 
 ### Hướng dẫn sử dụng
