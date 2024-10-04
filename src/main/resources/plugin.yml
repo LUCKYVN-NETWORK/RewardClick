@@ -1,0 +1,10 @@
+name: RewardClick
+version: '${project.version}'
+main: dev.DatxCute.Main
+api-version: '1.20'
+author: DatxCute
+
+commands:
+  reward:
+    aliases: [reward]
+    permission: rewardclick.use

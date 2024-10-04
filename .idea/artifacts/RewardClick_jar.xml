@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RewardClick:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RewardClick_jar</output-path>
+    <root id="archive" name="RewardClick.jar">
+      <element id="module-output" name="RewardClick" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,79 @@
+
+
+# Developer: DatxCute
+# Support: Contact me on discord @ huynhdat.
+# Copy Right DatxCute (Huỳnh Đạt)
+#
+# Current list of permissions:
+#   1. rewardclick.use - Sử dụng tính năng reward
+#   3. reward.start - Quyền bắt đầu sự kiện
+#   4. reward.stop - Quyền dừng sự kiện
+#   5. reward.reload - Quyền tải lại config
+
+Event-time: 300 # Mặc định tôi để 300 giây = 5 phút và ông có thể điều chỉnh nó theo ý thích
+
+#command thông báo khi sự kiện tự động kết thúc
+Event-end-message: "&8[&6!&8]&a Sự kiện nhặt quà đã kết thúc vì hết thời gian!"
+
+tiers:
+  Common:
+    material: STICK # nhớ thây đổi materials nếu muốn thêm tier
+    item-use: DIAMOND_BLOCK # material sẽ hiển thị khi ông đánh dấu , nếu muốn nó là player_head thì thay thế thành : head-{base64)
+    max_rewards: 10 # Số lượng tối đa phần thưởng
+    random_rewards: 7 # số lượng random phần thưởng
+    commands:
+      - 'give %player% minecraft:diamond 1'
+      - 'give %player% minecraft:netherite_ingot 2'
+      - 'give %player% minecraft:enchanted_golden_apple 1'
+    display-name: '&8[&eReward&8]&f Stick Reward'
+    lore:
+      - '&7Vật phẩm dùng để đánh dấu vị trí reward.'
+      - '&f'
+      - '&7Right click use.'
+
+  Rare:
+    material: BLAZE_ROD
+    item-use: DIAMOND_BLOCK 
+    max_rewards: 10
+    random_rewards: 7
+    commands:
+      - 'give %player% minecraft:diamond 2'
+      - 'give %player% minecraft:netherite_ingot 2'
+      - 'give %player% minecraft:enchanted_golden_apple 1'
+    display-name: '&8[&eReward&8]&f Stick Reward'
+    lore:
+      - '&7Vật phẩm dùng để đánh dấu vị trí reward.'
+      - '&f'
+      - '&7Right click use.'
+
+locations: {}
+
+help-messages:
+  - "&f==========&6 RewardClick&f By&d DatxCute &f=========="
+  - " §8[§6!§8] &cPlugins Beta &a1.0"
+  - " §8[§6!§8] &9Support Discord&f : @huynhdat."
+  - ""
+  - "&f • &e/reward help &8- &7Hiển thị trợ giúp về các lệnh."
+  - "&f • &e/reward edit <tier> &8- &7Bắt đầu chỉnh sửa tier."
+  - "&f • &e/reward save &8- &7Lưu các vị trí đã đánh dấu."
+  - "&f • &e/reward start &8- &7Bắt đầu sự kiện."
+  - "&f • &e/reward stop &8- &7Dừng sự kiện."
+  - "&f • &e/reward reload &8- &7Reload lại config"
+
+messages:
+  reward_message: "&8[&6!&8]&a Chúc mừng &f%player%&a đã nhận được phần thưởng &7[ &e%tier%&7 ]"
+  invalid_item_or_block: "&8[&6!&8]&c Vật phẩm không hợp lệ để đánh dấu vị trí hoặc block không hợp lệ trong cấu hình."
+  mark_position: "&8[&6!&8]&a Bạn đã đánh dấu cho vị trí&e reward&f: &a%tier%"
+  editing_tier: "&8[&6!&8]&a Bạn đang chỉnh sửa tier: %tier%"
+  received_item: "&8[&6!&8]&a Bạn đã nhận được vật phẩm để đánh dấu vị trí: %material%"
+  invalid_item: "&8[&6!&8]&c Vật phẩm không hợp lệ trong cấu hình."
+  tier_not_exist: "&8[&6!&8]&c Tier không tồn tại"
+  positions_saved: "&8[&6!&8]&a Các vị trí đã được lưu."
+  event_already_started: "&8[&6!&8]&c Sự kiện đã được bắt đầu rồi."
+  no_permission_to_start_event: "&8[&6!&8]&c Bạn không có quyền để bắt đầu sự kiện."
+  event_not_started: "&8[&6!&8]&c Sự kiện chưa được bắt đầu."
+  no_permission_to_stop_event: "&8[&6!&8]&c Bạn không có quyền để dừng sự kiện."
+  event_already_starteds: "&8[&6!&8]&c Sự kiện đã được bắt đầu trước đó."
+  event_starting: "§8[§6!§8]§a Sự kiện đang trong quá trình bắt đầu bắt đầu."
+  no_reward_locations: "&8[&6!&8]&c Không có vị trí phần thưởng nào được định nghĩa."
+  rewards_remaining: "&8[&6!&8]&a Còn lại&8 [&e%remaining%&8]&a phần quà tồn tại trên map!"
