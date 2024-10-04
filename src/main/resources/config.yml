@@ -10,6 +10,7 @@
 #   4. reward.stop - Quyền dừng sự kiện
 #   5. reward.reload - Quyền tải lại config
 
+# Thời gian sẽ được tính người người chơi sử dụng lệnh /reward start
 Event-time: 300 # Mặc định tôi để 300 giây = 5 phút và ông có thể điều chỉnh nó theo ý thích
 
 #command thông báo khi sự kiện tự động kết thúc
@@ -18,9 +19,9 @@ Event-end-message: "&8[&6!&8]&a Sự kiện nhặt quà đã kết thúc vì h�
 tiers:
   Common:
     material: STICK # nhớ thây đổi materials nếu muốn thêm tier
-    item-use: DIAMOND_BLOCK # material sẽ hiển thị khi ông đánh dấu , nếu muốn nó là player_head thì thay thế thành : head-{base64)
+    item-use: DIAMOND_BLOCK # material sẽ hiển thị khi bạn đánh dấu , nếu muốn nó là player_head custom thì thay thế thành : head-{base64)
     max_rewards: 10 # Số lượng tối đa phần thưởng
-    random_rewards: 7 # số lượng random phần thưởng
+    random_rewards: 7 # số lượng random phần thưởng, phần thưởng sẽ xuất hiện random với giá trị max_reward 
     commands:
       - 'give %player% minecraft:diamond 1'
       - 'give %player% minecraft:netherite_ingot 2'
