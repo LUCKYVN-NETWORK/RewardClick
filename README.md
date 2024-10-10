@@ -8,7 +8,7 @@
 <hr>
 
 ### Features
-- Hệ thống tùy chỉnh phần thưởng (config.yml)
+- Reward customization system (config.yml)
 
 ### Commands
 - RewardClick Comamnd
