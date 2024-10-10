@@ -12,18 +12,18 @@
 
 ### Commands
 - RewardClick Comamnd
-  - • /reward help - Hiển thị trợ giúp về các lệnh.
-  - • /reward edit <tier> - Bắt đầu chỉnh sửa tier.
-  - • /reward save - Lưu các vị trí đã đánh dấu.
-  - • /reward start - Bắt đầu sự kiện.
-  - • /reward stop - Dừng sự kiện.
-  - • /reward reload - Reload lại config
+  - • /reward help - Shows help about commands.
+  - • /reward edit - Edit Setup.
+  - • /reward save - Saves marked locations.
+  - • /reward start - Starts the event.
+  - • /reward stop - Stops the event.
+  - • /reward reload - Reloads the config
 <hr>
 
 ### Hướng dẫn sử dụng
-đặc các khối block bất kì ở các khu vực muốn xuất hiện reward
-và sử dụng /reward edit <tier là loại quà muốn xuống hiện> điều này sẽ có hướng dẫn trong config
-khi setup xong chỉ cần save và cài đặc thời gian tự động start, khi sự kiện được bắt đầu
-các phần quà sẽ xuất hiện ngẫu nhiên ở các vị trí người chơi đã chỉnh trước đó
-sự kiện sẽ tự động kết thúc khi người phần thưởng được nhặt hết
+Place any blocks in areas where you want rewards to appear
+and use /reward edit <tier is the type of gift you want to display> this will have instructions in the config
+Once setup is complete, just save and set the automatic start time, when the event is started
+Gifts will appear randomly in positions previously adjusted by the player
+The event will automatically end when all rewards are picked up
 <hr>
