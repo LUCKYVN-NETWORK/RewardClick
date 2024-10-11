@@ -11,7 +11,7 @@
 #   5. reward.reload - Quyền tải lại config
 
 # Thời gian sẽ được tính người người chơi sử dụng lệnh /reward start
-Event-time: 300 # Mặc định tôi để 300 giây = 5 phút và ông có thể điều chỉnh nó theo ý thích
+Event-time: 300 # Mặc định tôi 300 giây = 5 phút và có thể điều chỉnh nó theo ý thích
 
 #command thông báo khi sự kiện tự động kết thúc
 Event-end-message: "&8[&6!&8]&a Sự kiện nhặt quà đã kết thúc vì hết thời gian!"
