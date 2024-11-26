@@ -1,5 +1,5 @@
 <br>
-<h3 align="center">lDisguise</h3>
+<h3 align="center">RewardClick</h3>
 <p align="center">
     <img src="https://img.shields.io/badge/Version-1.0.0-green"> <img src="https://img.shields.io/badge/Spigot-1.20.4-lightgrey"><img src="https://img.shields.io/badge/Language-Java-yellow">
 </p>
