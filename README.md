@@ -20,7 +20,7 @@
   - • /reward reload - Reloads the config
 <hr>
 
-### Hướng dẫn sử dụng
+### Help use plugins
 Place any blocks in areas where you want rewards to appear
 and use /reward edit <tier is the type of gift you want to display> this will have instructions in the config
 Once setup is complete, just save and set the automatic start time, when the event is started
